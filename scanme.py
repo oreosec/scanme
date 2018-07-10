@@ -104,8 +104,8 @@ def test(dork, tipe):
     save = input("\033[33m[?] Are you want to save result [y/N] > ")
     if save.lower() == "y":
         f = open("result.txt", "a+")
-        for z in vuln:
-            f.write(z)
+        for z in svuln:
+            f.write(z+"\n")
         f.close()         
 
 def banner():
